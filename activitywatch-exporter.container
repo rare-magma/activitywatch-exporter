@@ -1,0 +1,16 @@
+[Unit]
+Description=activitywatch-exporter quadlet
+
+[Container]
+AutoUpdate=registry
+ContainerName=activitywatch-exporter
+DropCapability=ALL
+Image=ghcr.io/rare-magma/activitywatch-exporter:latest
+NoNewPrivileges=true
+PodmanArgs=--cpus=2 --memory=250m
+Pull=newer
+ReadOnly=true
+Volume=./activitywatch_exporter.json:/activitywatch_exporter.json:ro,Z
+UserNS=auto
+
+[Service]

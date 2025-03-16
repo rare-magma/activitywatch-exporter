@@ -1,0 +1,9 @@
+[Unit]
+Description=run activitywatch-exporter daily
+
+[Timer]
+OnCalendar=Daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
