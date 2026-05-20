@@ -1,5 +1,5 @@
 # activitywatch-exporter
-
+# I no longer use activitywatch so development of this tool has ceased. Feel free to fork it
 CLI tool that uploads the ActivityWatch data from the aw-server API to influxdb on a daily basis
 
 ## Dependencies
